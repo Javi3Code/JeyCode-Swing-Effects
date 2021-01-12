@@ -11,6 +11,6 @@ Esta librería provee de objetos y métodos para realizar efectos en componentes
 
 #Tareas Pendientes
 
--Documentación
--Agregar Javadoc.Plugin a POM.xml
+- Documentación
+- Agregar Javadoc.Plugin a POM.xml
 
