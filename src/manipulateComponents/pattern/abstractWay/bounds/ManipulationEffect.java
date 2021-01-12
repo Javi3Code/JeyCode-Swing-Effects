@@ -145,10 +145,10 @@ public final class ManipulationEffect extends ManipulateAnyComponent
       }
 
       private void initializeDual()
-      {// @formatter:off
-												if (!option.equals(ManipulateBounds.WIDTH__HEIGHT) && !option.equals(ManipulateBounds.X_AXIS__AXIS_Y))
-												 {
-																		throw new JPAOMRuntimeException(ManipulationEffect.INCOMPATIBLE_VALUE);			// @formatter:on
+      {
+            if (!option.equals(ManipulateBounds.WIDTH__HEIGHT) && !option.equals(ManipulateBounds.X_AXIS__AXIS_Y))
+            {
+                  throw new JPAOMRuntimeException(ManipulationEffect.INCOMPATIBLE_VALUE);
             }
             initial = option.equals(ManipulateBounds.WIDTH__HEIGHT) ? getActor().getWidth() : getActor().getX();
             initial2 = option.equals(ManipulateBounds.WIDTH__HEIGHT) ? getActor().getHeight() : getActor().getY();
