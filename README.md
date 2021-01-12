@@ -9,3 +9,8 @@ Esta librería provee de objetos y métodos para realizar efectos en componentes
 - Modificar ventanas agrupando efectos.
 - Effecto drag and drop, el que se puede combinar con transparencia.
 
+#Tareas Pendientes
+
+-Documentación
+-Agregar Javadoc.Plugin a POM.xml
+
