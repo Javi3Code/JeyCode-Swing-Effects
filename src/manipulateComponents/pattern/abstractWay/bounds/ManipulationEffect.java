@@ -26,12 +26,12 @@ public final class ManipulationEffect extends ManipulateAnyComponent
       private boolean increase;
       private boolean increase2;
       private ManipulateBounds option;
-      private final boolean isDual;
+      private final boolean isDualEvent;
 
       private ManipulationEffect(final Component actor,final Velocity gear,boolean dual)
       {
             super(actor,gear);
-            isDual = dual;
+            isDualEvent = dual;
       }
 
       public static ManipulationEffectBuilderSimple simple(final Component actor,final Velocity gear)
@@ -49,7 +49,7 @@ public final class ManipulationEffect extends ManipulateAnyComponent
       public void actionPerformed(final ActionEvent e)
       {
             initial = control(initial,finish,increase);
-            if (isDual)
+            if (isDualEvent)
             {
                   initial2 = control(initial2,finish2,increase2);
             }
@@ -76,7 +76,7 @@ public final class ManipulationEffect extends ManipulateAnyComponent
 
             if (initial == finish)
             {
-                  if (!isDual)
+                  if (!isDualEvent)
                   {
                         stop();
                   }
@@ -122,7 +122,7 @@ public final class ManipulationEffect extends ManipulateAnyComponent
 
       public void updateInitialValues()
       {
-            if (isDual)
+            if (isDualEvent)
             {
                   initializeDual();
             }
